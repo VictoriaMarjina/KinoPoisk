@@ -11,7 +11,7 @@
 
 .moovie-card {
     width: 500px;
-    height: 520px;
+    height: 550px;
     margin: 10px;
     border: 1px solid black;
     border-radius: 5px;
@@ -28,5 +28,6 @@
 .cancel__x {
     text-align: center;
     border: 1px solid black;
-    width: 20px;
+    width: 18px;
+    height: 20px;
 }

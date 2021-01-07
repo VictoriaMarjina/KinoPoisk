@@ -6,7 +6,7 @@ const Card = props => {
             <div className='moovie-card__cancel'>
                 <div className='cancel__x'>x</div>
             </div>
-            <img src={props.image} className='moovie-card__poster' alt='poster' style={{height: '230px', width: '200px'}}></img>
+            <img src={props.image} className='moovie-card__poster' alt='poster' style={{height: '250px', width: '200px'}}></img>
             <p className='moovie-card__name-ru'>{props.nameRu}</p>
             <p className='moovie-card__name-eng'>{props.nameEn}</p>
             <p className='moovie-card__genres'>{props.genre}</p>

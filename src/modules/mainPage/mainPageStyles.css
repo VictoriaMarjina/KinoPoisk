@@ -10,7 +10,7 @@
     background-image: url('../../pictures/Kinopoisk-logo.svg.png');
     background-size: contain;
     margin-left: 400px;
-    margin-right: 421px;
+    margin-right: 350px;
 }
 .curr_page {
     height: 100%;
@@ -27,7 +27,7 @@
     color: black;
 }
 
-.active {
+.home {
     background-color: tomato;
     color: white;
 }

@@ -19,7 +19,7 @@ const Header = () => {
             </div>
             <div className={'moovies'}>
                 <Link clssName={'header-link'} to={'/moovies'}>
-                    TOP-20 "\u2B50"
+                    TOP-20
                 </Link>
             </div>
         </div>  

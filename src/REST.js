@@ -1,51 +1,16 @@
-// export function addNewMessage(message) {
-//     try {
-//         return fetch('http://localhost:3002/addMessage', {
-//             method: 'POST',
-//             headers: {
-//                 'Content-Type': 'application/json',
-//             },
-//             body: JSON.stringify(message),
-//         });
-//     } catch (e) {
-//         console.log('ERROR', e);
-//     }
-// }
+const urls = 'https://kinopoiskapiunofficial.tech';
+const type = 'TOP_250_BEST_FILMS';
+const page = 1;
 
-export function getAllMessages() {
-    try {
-        return fetch('http://localhost:3002/getAllMessages')
-        .then(res => res.json());
-    } catch (e) {
-        console.log('ERROR', e);
-    }
-}
+ export const getRate = async () => {
+    return await fetch(`${urls}/api/v2.2/films/top?type=${type}&page=${page}`, {
+        method: 'GET',
+        headers: {
+            'Content-Type': 'application/json;charset=utf-8',
+            'X-API-KEY': '0e5cd1cf-08cc-4a8d-85cd-d651fc2bf831',
+        },
+    }).then(res => res.json())
+      .catch(error => console.log(error))
+};
 
-export function logIn(user) {
-    try {
-        return fetch('http://localhost:3002/logIn', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify(user),
-        })
-        .then(res => res.json());
-    } catch (e) {
-        console.log('ERROR', e);
-    }
-}
-
-export function logOut(user) {
-    try {
-        return fetch('http://localhost:3002/logOut', {
-            method: 'DELETE',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify(user),
-        });
-    } catch (e) {
-        console.log('ERROR', e);
-    }
-}
+//getRate().then(res => console.log(res));

@@ -1,7 +1,7 @@
 import { combineReducers } from 'redux';
-import loginPage from '../../manager/loginManager/reducer';
+import pageReducer from '../../manager/pageManager/reducer';
 
 
 export default combineReducers({
-    loginPage,
+    pageReducer,
 });

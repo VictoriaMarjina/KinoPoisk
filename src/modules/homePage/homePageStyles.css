@@ -1,0 +1,8 @@
+.root__logo-container {
+    background-image: url('./../../pictures/11-12-1-1024x597.jpg');
+    background-color: red;
+    height: 500px;
+    width: 1020px;
+    margin-left: 110px;
+    margin-top: 20px;
+}

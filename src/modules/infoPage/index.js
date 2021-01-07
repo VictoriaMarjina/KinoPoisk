@@ -1,4 +1,4 @@
-import Component from './MainPage';
+import Component from './InfoPage';
 import * as selectors from './selectors';
 import { connect } from 'react-redux';
 

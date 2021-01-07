@@ -1,0 +1,32 @@
+.main-cards-conatiner {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-cards-conatiner_row {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.moovie-card {
+    width: 500px;
+    height: 520px;
+    margin: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.moovie-card__poster {
+    margin-left: 60px;
+}
+
+.moovie-card__cancel {
+    display: flex;
+    flex-direction: row-reverse;
+}
+.cancel__x {
+    text-align: center;
+    border: 1px solid black;
+    width: 20px;
+}

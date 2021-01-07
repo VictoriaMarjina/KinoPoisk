@@ -1,0 +1,53 @@
+.logo {
+    height: 45px;
+    width: 70px;
+    background-image: url('../../pictures/online-kinoteatr.gif');
+    background-size: contain;
+}
+.kino_logo {
+    height: 45px;
+    width: 160px;
+    background-image: url('../../pictures/Kinopoisk-logo.svg.png');
+    background-size: contain;
+    margin-left: 400px;
+    margin-right: 421px;
+}
+.curr_page {
+    height: 100%;
+    width: 100%;
+    /* background-image: url('../../pictures/pngtree-film-video-tape-gray-banner-image_14622\ \(1\).jpg'); */
+    background-size: contain;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+.header div:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.active {
+    background-color: tomato;
+    color: white;
+}
+
+.header {
+    overflow: hidden;
+    background-color: #f1f1f1;
+    padding: 20px 10px;
+    padding-bottom: 0px;
+}
+
+.header div {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px; 
+    line-height: 25px;
+    border-radius: 4px;
+}
+
+

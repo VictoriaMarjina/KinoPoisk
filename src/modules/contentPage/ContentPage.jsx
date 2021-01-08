@@ -1,54 +1,55 @@
 import React from 'react';
 import './contentPageStyles.css';
-import * as api from '../../REST';
 import Card from './components/Card';
 
-
-export default class ContentPage extends React.PureComponent {
+class ContentPage extends React.PureComponent {
     constructor(props) {
         super(props);
-
         this.state = {
-            moovies: [],
+            isClosed: false
         }
-       
-        api.getRate().then(res => this.saveInfo(res));
     }
 
-    saveInfo = info => {
-        const films  = info.films;
-        console.log(films);
-        this.setState({
-            moovies: films,
-        });
-        const {
-            getInfo
+    closeCard = event => {
+        console.log(event.target);
+        const { id } = event.target;
+        console.log(id);
+        event.preventDefault();
+
+        const { 
+            closeCard 
         } = this.props;
 
-        getInfo(films);
+        closeCard(id);
     }
-
+    
     render() {
         const {
             mooviesList
         } = this.props;
-
+        
+        console.log(mooviesList);
         return (
-            <div className = {"main-cards-conatiner"}>
+            <div className={"main-cards-conatiner"}>
                  { 
-                     mooviesList.map((film, index) => (
-                        <Card key = {index}
-                              country = {film.countries[0].country}
-                              filmLength = {film.filmLength}
-                              genre = {film.genres[0].genre}
-                              nameEn = {film.nameEn}
-                              nameRu = {film.nameRu}
-                              image = {film.posterUrl}
-                              rating = {film.rating}
-                              year = {film.year}/>
+                    mooviesList.map((film, index) => (
+                        <Card key={index}
+                              filmId={film.filmId}
+                              country={film.countries[0].country}
+                              filmLength={film.filmLength}
+                              genre={film.genres[0].genre}
+                              nameEn={film.nameEn}
+                              nameRu={film.nameRu}
+                              image={film.posterUrl}
+                              rating={film.rating}
+                              year={film.year}
+                              func={this.closeCard}
+                              isClosed={film.isClosed}/>
                     ))
                  }
             </div>
         )
     }
 }
+
+export default ContentPage;

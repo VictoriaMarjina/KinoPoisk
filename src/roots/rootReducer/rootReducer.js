@@ -1,7 +1,7 @@
 import { combineReducers } from 'redux';
-import pageReducer from '../../manager/pageManager/reducer';
+import filmsReducer from '../../manager/filmsManager/reducer';
 
 
 export default combineReducers({
-    pageReducer,
+    filmsReducer,
 });

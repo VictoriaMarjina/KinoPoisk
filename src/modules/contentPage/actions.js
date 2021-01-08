@@ -1,11 +1,7 @@
 import constants from '../../constants';
 
-// export const openAutorisationPage = () => ({
-//     type: constants.OPEN_AUTORISATION_PAGE,
-// });
-
-export const saveContent = payload => ({
-    type: constants.SAVE_CONTENT,
+export const closeCard = payload => ({
+    type: constants.CLOSE_CARD,
     payload,
 });
-    
+

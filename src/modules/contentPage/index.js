@@ -4,13 +4,11 @@ import * as actions from  './actions';
 import { connect } from 'react-redux';
 
 const mapStateToProps = state => ({
-    currentPage: selectors.getCurrentPage(state),
     mooviesList: selectors.getContent(state),
 });
 
 const mapDispatchToProps = dispatch => ({
-    getInfo: payload => dispatch(actions.saveContent(payload)),
+    closeCard: payload => dispatch(actions.closeCard(payload)),
 });
-
 
 export default connect(mapStateToProps, mapDispatchToProps)(Component);

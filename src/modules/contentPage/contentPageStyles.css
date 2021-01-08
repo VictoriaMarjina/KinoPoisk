@@ -1,16 +1,10 @@
 .main-cards-conatiner {
     display: flex;
-    flex-direction: column;
-}
-
-.main-cards-conatiner_row {
-    display: flex;
-    flex-direction: row;
-
+    flex-wrap: wrap;
 }
 
 .moovie-card {
-    width: 500px;
+    width: 322px;
     height: 550px;
     margin: 10px;
     border: 1px solid black;

@@ -6,26 +6,13 @@ class ContentPage extends React.PureComponent {
     constructor(props) {
         super(props);
         this.state = {
-            isClosed: false
         }
     }
 
-    closeCard = event => {
-        console.log(event.target);
-        const { id } = event.target;
-        console.log(id);
-        event.preventDefault();
-
-        const { 
-            closeCard 
-        } = this.props;
-
-        closeCard(id);
-    }
-    
     render() {
         const {
-            mooviesList
+            mooviesList, 
+            closeCard
         } = this.props;
         
         console.log(mooviesList);
@@ -43,8 +30,8 @@ class ContentPage extends React.PureComponent {
                               image={film.posterUrl}
                               rating={film.rating}
                               year={film.year}
-                              func={this.closeCard}
-                              isClosed={film.isClosed}/>
+                              closeCard={closeCard}
+                              willClosed={film.willClosed}/>
                     ))
                  }
             </div>

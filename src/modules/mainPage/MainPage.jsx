@@ -1,32 +1,21 @@
 import './mainPageStyles.css';
-import React, { Suspense } from 'react';
 import Header from './components/Header';
-import * as api from '../../REST';
 import HomePage from '../homePage';
-import InfoPage from '../infoPage';
+import * as api from '../../REST';
 import ContentPage from '../contentPage';
+import React, { Suspense } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+const InfoPage = React.lazy(() => import ('../infoPage'));
 
 class MainPage extends React.PureComponent {
-    constructor(props) {
-        super(props);
-        this.state = {
-            isClosed: false
-        }
-        
-        this.getInfo();
-    }
-    
-    getInfo = () => {
+
+    componentDidMount = () => {
         api.getRate().then(res => this.saveInfo(res));
     }
 
     saveInfo = info => {
         const films  = info.films;
-        //console.log(films);
-        const {
-            getInfo
-        } = this.props;
+        const { getInfo } = this.props;
 
         getInfo(films);
     }

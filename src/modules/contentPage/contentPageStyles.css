@@ -12,6 +12,7 @@
 }
 
 .moovie-card__poster {
+    margin-top: 5px;
     margin-left: 60px;
 }
 
@@ -19,9 +20,16 @@
     display: flex;
     flex-direction: row-reverse;
 }
+
 .cancel__x {
     text-align: center;
-    border: 1px solid black;
     width: 18px;
     height: 20px;
+    color: white;
+    border: 1px solid white;
+}
+
+.cancel__x:hover {
+    color:black;
+    border: 1px solid black;
 }

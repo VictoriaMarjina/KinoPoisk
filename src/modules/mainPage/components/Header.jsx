@@ -9,17 +9,17 @@ const Header = () => {
             <div className={'header-right'}>
                 <div className={'home'}>
                     <Link className={'header-link'} to={'/'}>
-                        Home
+                        Главная страница
                     </Link>
                 </div>
                 <div className={'about'}>
                     <Link className={'header-link'} to={'/info'}>
-                        About
+                        О Нас
                     </Link>
                 </div>
                 <div className={'moovies'}>
                     <Link className={'header-link'} to={'/moovies'}>
-                        TOP-20
+                        TOП-20
                     </Link>
                 </div>
             </div>  

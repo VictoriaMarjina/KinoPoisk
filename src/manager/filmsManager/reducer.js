@@ -14,16 +14,8 @@ const pageReducer = (state = initialState, action) => {
         case constants.CLOSE_CARD:
             return {  
                 ...state,
-                mooviesList: state.mooviesList.map(film => {
-                    if(film.filmId === +action.payload || film.isClosed === false){
-                        film.isClosed = false;
-                        return film;
-                    } else {
-                        film.isClosed = true;
-                        return film;
-                    }
-                })
-            };       
+                mooviesList: state.mooviesList.map(film => film.filmId === action.payload ? { ...film, willClosed: true } : film)  
+            };      
         default:
             return state;
     }

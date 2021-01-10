@@ -19,7 +19,7 @@ const Header = () => {
                 </div>
                 <div className={'header-button moovies'}>
                     <Link className={'header-link'} to={'/moovies'}>
-                        TOП-20
+                        TOП-20🌟
                     </Link>
                 </div>
             </div>  

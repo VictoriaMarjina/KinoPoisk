@@ -8,3 +8,7 @@
     padding-bottom: 50px;
     background-color: black;
 }
+
+.info-container__p {
+    text-indent: 20px;
+}

@@ -8,7 +8,6 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 const InfoPage = React.lazy(() => import ('../infoPage'));
 
 class MainPage extends React.PureComponent {
-
     componentDidMount = () => {
         api.getRate().then(res => this.saveInfo(res));
     }
@@ -25,7 +24,7 @@ class MainPage extends React.PureComponent {
             <Router>
                 <Suspense fallback={<div>Страница загружается...</div>}>
                     <Header/>
-                    <div className={'curr_page'}>
+                    <div className={'Curr_page'}>
                         <Switch>
                             <Route path="/" exact component={HomePage}/> 
                             <Route path="/info" component={InfoPage}/>

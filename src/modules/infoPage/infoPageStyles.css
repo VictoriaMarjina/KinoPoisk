@@ -1,10 +1,10 @@
-.info_container {
-    height: 500px;
+.Info_container {
     width: 1460px;
-    margin-left: 10px;
-    padding-bottom: 50px;
+    height: 500px;
     color: white;
-    background-color: black;
-    border-radius: 10px;
     padding: 10px;
+    margin-left: 10px;
+    border-radius: 10px;
+    padding-bottom: 50px;
+    background-color: black;
 }

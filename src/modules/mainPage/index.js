@@ -1,6 +1,6 @@
 import Component from './MainPage';
-import * as selectors from './selectors';
 import { connect } from 'react-redux';
+import * as selectors from './selectors';
 import * as actions from  './actions';
 
 const mapStateToProps = state => ({

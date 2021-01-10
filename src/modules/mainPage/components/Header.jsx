@@ -3,22 +3,22 @@ import { Link }  from 'react-router-dom';
 
 const Header = () => {
     return (
-        <div className={'header'}>
-            <div className={'logo'}></div>
-            <div className={'kino_logo'}></div>
-            <div className={'header-right'}>
-                <div className={'header-button home'}>
-                    <Link className={'header-link'} to={'/'}>
+        <div className={'Header'}>
+            <div className={'Header__logo'}></div>
+            <div className={'Header__kino-logo'}></div>
+            <div className={'Header__buttons'}>
+                <div className={'Header-button home'}>
+                    <Link className={'Header-link'} to={'/'}>
                         Главная 
                     </Link>
                 </div>
-                <div className={'header-button about'}>
-                    <Link className={'header-link'} to={'/info'}>
+                <div className={'Header-button about'}>
+                    <Link className={'Header-link'} to={'/info'}>
                         О Нас
                     </Link>
                 </div>
-                <div className={'header-button moovies'}>
-                    <Link className={'header-link'} to={'/moovies'}>
+                <div className={'Header-button moovies'}>
+                    <Link className={'Header-link'} to={'/moovies'}>
                         TOП-20
                     </Link>
                 </div>

@@ -1,6 +1,6 @@
 import Component from './InfoPage';
-import * as selectors from './selectors';
 import { connect } from 'react-redux';
+import * as selectors from './selectors';
 
 const mapStateToProps = state => ({
     currentPage: selectors.getCurrentPage(state),

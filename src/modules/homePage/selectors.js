@@ -1,1 +1,1 @@
-export const getCurrentPage = state => state.filmsReducer.mooviesList;
+export const getCurrentMoovieList = state => state.filmsReducer.mooviesList;

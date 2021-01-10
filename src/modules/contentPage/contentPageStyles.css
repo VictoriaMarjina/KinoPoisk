@@ -1,61 +1,62 @@
-.main-cards-conatiner {
+.Cards-conatiner {
     display: flex;
     flex-wrap: wrap;
-    background-color: black;
     padding-top: 10px;
     padding-bottom: 10px;
+    background-color: black;
 }
 
-.moovie-card {
+.Moovie-card {
     width: 355px;
     height: 600px;
     margin: 10px;
-    border: 1px solid orange;
     border-radius: 6px;
+    border: 1px solid orange;
 }
 
-.moovie-card__poster {
+.Moovie-card__poster {
+    width: 200px;
+    height: 250px;
     margin-top: 5px;
     margin-left: 75px;
 }
 
-.moovie-card__cancel {
+.Moovie-card__cancel {
     display: flex;
     flex-direction: row-reverse;
 }
 
-.cancel__x {
-    text-align: center;
+.Cancel__x {
     width: 18px;
     height: 20px;
     color: black;
-    font-size: 20px;
     border: 1px solid black;
+    font-size: 20px;
+    text-align: center;
 }
 
-.cancel__x:hover {
+.Cancel__x:hover {
     color:orange;
-    /* border: 1px solid orange; */
 }
 
-.moovie-card__info {
+.Moovie-card__info {
     color:white;
     text-align: center;
 }
 
-.rating {
+.Rating {
     color:orange;
     font-weight: bold;
 }
 
-.name-ru{
+.Name-ru{
     color:orange;
     font-weight: bold;
     font-size: 20px;
 }
 
-.name-eng{
+.Name-eng{
     color:orange;
-    font-weight: bold;
     font-size: 15px;
+    font-weight: bold;
 }

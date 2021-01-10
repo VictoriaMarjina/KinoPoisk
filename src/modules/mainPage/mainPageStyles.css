@@ -9,34 +9,34 @@
     width: 160px;
     background-image: url('../../pictures/Kinopoisk-logo.svg.png');
     background-size: contain;
-    margin-left: 380px;
-    margin-right: 330px;
+    margin-left: 470px;
+    margin-right: 470px;
 }
 .curr_page {
     height: 500px;
     width: 100%;
-    /* background-image: url('../../pictures/pngtree-film-video-tape-gray-banner-image_14622\ \(1\).jpg'); */
-    background-size: contain;
+    background-color: black;
     margin-top: 0px;
     margin-bottom: 0px;
     padding-bottom: 0px;
 }
 
-.header div:hover {
-    background-color: #ddd;
-    color: black;
+.header-button:hover {
+    background-color: goldenrod;
 }
 
-.home {
-    background-color: tomato;
-    color: white;
-}
 
 .header {
     overflow: hidden;
-    background-color: #f1f1f1;
+    background-color: black;
     padding: 20px 10px;
-    padding-bottom: 0px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+}
+
+.Footer {
+    background-color: black;
+    height: 150px;
 }
 
 .header div {

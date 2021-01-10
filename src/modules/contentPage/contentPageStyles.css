@@ -1,19 +1,22 @@
 .main-cards-conatiner {
     display: flex;
     flex-wrap: wrap;
+    background-color: black;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .moovie-card {
-    width: 322px;
-    height: 550px;
+    width: 355px;
+    height: 600px;
     margin: 10px;
-    border: 1px solid black;
-    border-radius: 5px;
+    border: 1px solid orange;
+    border-radius: 6px;
 }
 
 .moovie-card__poster {
     margin-top: 5px;
-    margin-left: 60px;
+    margin-left: 75px;
 }
 
 .moovie-card__cancel {
@@ -25,11 +28,34 @@
     text-align: center;
     width: 18px;
     height: 20px;
-    color: white;
-    border: 1px solid white;
+    color: black;
+    font-size: 20px;
+    border: 1px solid black;
 }
 
 .cancel__x:hover {
-    color:black;
-    border: 1px solid black;
+    color:orange;
+    /* border: 1px solid orange; */
+}
+
+.moovie-card__info {
+    color:white;
+    text-align: center;
+}
+
+.rating {
+    color:orange;
+    font-weight: bold;
+}
+
+.name-ru{
+    color:orange;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.name-eng{
+    color:orange;
+    font-weight: bold;
+    font-size: 15px;
 }

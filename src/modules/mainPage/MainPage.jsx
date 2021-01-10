@@ -32,6 +32,7 @@ class MainPage extends React.PureComponent {
                             <Route path="/moovies" component={ContentPage}/>
                         </Switch>
                     </div>
+                    <div className={'Footer'}></div>
                 </Suspense>
             </Router>
         );

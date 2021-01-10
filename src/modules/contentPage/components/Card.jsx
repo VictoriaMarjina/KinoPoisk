@@ -11,13 +11,13 @@ const Card = props => {
                     <div className='cancel__x' onClick={() => closeCard(filmId)}>x</div>
                 </div>
                 <img src={image} className='moovie-card__poster' alt='poster' style={{height: '250px', width: '200px'}}></img>
-                <p className='moovie-card__name-ru'>{nameRu}</p>
-                <p className='moovie-card__name-eng'>{nameEn}</p>
-                <p className='moovie-card__genres'>{genre}</p>
-                <p className='moovie-card__country'>{country}</p>
-                <p className='moovie-card__year'>{year}</p>
-                <p className='moovie-card__filmLength'>{filmLength}</p>
-                <p className='moovie-card__rating '>{rating}</p>
+                <p className={'moovie-card__info name-ru'}>{nameRu}</p>
+                <p className={'moovie-card__info name-eng'}>{nameEn}</p>
+                <p className={'moovie-card__info genres'}>Жанр: {genre}</p>
+                <p className={'moovie-card__info country'}>Страна: {country}</p>
+                <p className={'moovie-card__info year'}>Год выпуска: {year}</p>
+                <p className={'moovie-card__info filmLength'}>Продолжительность: {filmLength}</p>
+                <p className={'moovie-card__info rating'}>{rating}🌟</p>
             </div> : null
     );
 };

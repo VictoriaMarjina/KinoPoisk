@@ -4,7 +4,7 @@ class InfoPage extends React.PureComponent {
 
     render() {
         return (
-            <div className={'Info_container'}>
+            <div className={'info_container'}>
                 <p> «КиноПо́иск» — крупнейший русскоязычный интернет-сервис о кино. С 2018 года также доступен 
                     онлайн-кинотеатр с несколькими тысячами фильмов, сериалов, мультфильмов, в том числе премьерных 
                     и эксклюзивных.

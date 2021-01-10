@@ -24,14 +24,14 @@ class MainPage extends React.PureComponent {
             <Router>
                 <Suspense fallback={<div>Страница загружается...</div>}>
                     <Header/>
-                    <div className={'Curr_page'}>
+                    <div className={'curr_page'}>
                         <Switch>
                             <Route path="/" exact component={HomePage}/> 
                             <Route path="/info" component={InfoPage}/>
                             <Route path="/moovies" component={ContentPage}/>
                         </Switch>
                     </div>
-                    <div className={'Footer'}></div>
+                    <div className={'footer'}></div>
                 </Suspense>
             </Router>
         );

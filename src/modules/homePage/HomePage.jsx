@@ -20,16 +20,16 @@ export default class Homepage extends Component {
         }
         
         return (
-            <div className='Carousel'>
+            <div className='carousel'>
                 <Slider {...settings}>
-                    <div className={'Carousel-block'}>
-                        <img src={firstSlide} alt={'slide 1'} className={'Carousel-slider'}/>
+                    <div className={'carousel-block'}>
+                        <img src={firstSlide} alt={'slide 1'} className={'carousel-slider'}/>
                     </div>
-                    <div className={'Carousel-block'}>
-                        <img src={secondSlide} alt={'slide 2'} className={'Carousel-slider'}/>
+                    <div className={'carousel-block'}>
+                        <img src={secondSlide} alt={'slide 2'} className={'carousel-slider'}/>
                     </div>
-                    <div className={'Carousel-block'}>
-                        <img src={thirdSlide} alt={'slide 3'} className={'Carousel-slider'}/>
+                    <div className={'carousel-block'}>
+                        <img src={thirdSlide} alt={'slide 3'} className={'carousel-slider'}/>
                     </div>
                 </Slider>
             </div>

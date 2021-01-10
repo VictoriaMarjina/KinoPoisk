@@ -1,11 +1,11 @@
-.Header__logo {
+.header__logo {
     height: 45px;
     width: 70px;
     background-image: url('../../pictures/online-kinoteatr.gif');
     background-size: contain;
 }
 
-.Header__kino-logo {
+.header__kino-logo {
     height: 45px;
     width: 160px;
     background-image: url('../../pictures/Kinopoisk-logo.svg.png');
@@ -14,7 +14,7 @@
     margin-right: 470px;
 }
 
-.Curr_page {
+.curr_page {
     height: 500px;
     width: 100%;
     background-color: black;
@@ -23,11 +23,11 @@
     padding-bottom: 0px;
 }
 
-.Header-button:hover {
+.header-button:hover {
     background-color: goldenrod;
 }
 
-.Header {
+.header {
     overflow: hidden;
     background-color: black;
     padding: 20px 10px;
@@ -35,12 +35,12 @@
     padding-left: 15px;
 }
 
-.Footer {
+.footer {
     height: 150px;
     background-color: black;
 }
 
-.Header div {
+.header div {
     float: left;
     color: black;
     text-align: center;
@@ -51,7 +51,7 @@
     border-radius: 4px;
 }
 
-.Header-link {
+.header-link {
     text-decoration: none;
 }
 

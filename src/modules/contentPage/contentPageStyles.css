@@ -1,4 +1,4 @@
-.Cards-conatiner {
+.cards-conatiner {
     display: flex;
     flex-wrap: wrap;
     padding-top: 10px;
@@ -6,7 +6,7 @@
     background-color: black;
 }
 
-.Moovie-card {
+.moovie-card {
     width: 355px;
     height: 600px;
     margin: 10px;
@@ -14,19 +14,19 @@
     border: 1px solid orange;
 }
 
-.Moovie-card__poster {
+.moovie-card__poster {
     width: 200px;
     height: 250px;
     margin-top: 5px;
     margin-left: 75px;
 }
 
-.Moovie-card__cancel {
+.moovie-card__cancel {
     display: flex;
     flex-direction: row-reverse;
 }
 
-.Cancel__x {
+.cancel__x {
     width: 18px;
     height: 20px;
     color: black;
@@ -35,27 +35,27 @@
     text-align: center;
 }
 
-.Cancel__x:hover {
+.cancel__x:hover {
     color:orange;
 }
 
-.Moovie-card__info {
+.moovie-card__info {
     color:white;
     text-align: center;
 }
 
-.Rating {
+.rating {
     color:orange;
     font-weight: bold;
 }
 
-.Name-ru{
+.name-ru{
     color:orange;
     font-weight: bold;
     font-size: 20px;
 }
 
-.Name-eng{
+.name-eng{
     color:orange;
     font-size: 15px;
     font-weight: bold;

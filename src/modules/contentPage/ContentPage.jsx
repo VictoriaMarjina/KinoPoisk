@@ -11,7 +11,7 @@ class ContentPage extends React.PureComponent {
         
         console.log(mooviesList);
         return (
-            <div className={"Cards-conatiner"}>
+            <div className={"cards-conatiner"}>
                  { 
                     mooviesList.map((film, index) => (
                         <Card key={index}

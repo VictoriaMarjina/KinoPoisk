@@ -5,26 +5,25 @@ import React from 'react';
 class ContentPage extends React.PureComponent {
     render() {
         const {
+            closeCard,
             mooviesList, 
-            closeCard
         } = this.props;
         
-        console.log(mooviesList);
         return (
-            <div className={"cards-conatiner"}>
+            <div className={"cards-container"}>
                  { 
                     mooviesList.map((film, index) => (
                         <Card key={index}
-                              filmId={film.filmId}
-                              country={film.countries[0].country}
-                              filmLength={film.filmLength}
+                              year={film.year}
+                              image={film.posterUrl}
                               genre={film.genres[0].genre}
+                              filmId={film.filmId}
                               nameEn={film.nameEn}
                               nameRu={film.nameRu}
-                              image={film.posterUrl}
                               rating={film.rating}
-                              year={film.year}
+                              country={film.countries[0].country}
                               closeCard={closeCard}
+                              filmLength={film.filmLength}
                               willClosed={film.willClosed}/>
                     ))
                  }

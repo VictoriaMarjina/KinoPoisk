@@ -4,7 +4,7 @@ import HomePage from '../homePage';
 import * as api from '../../REST';
 import ContentPage from '../contentPage';
 import React, { Suspense } from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { HashRouter as Router, Route, Switch } from 'react-router-dom';
 const InfoPage = React.lazy(() => import ('../infoPage'));
 
 class MainPage extends React.PureComponent {

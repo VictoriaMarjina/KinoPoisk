@@ -2,7 +2,17 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const Card = props => {
-    const { nameRu, nameEn, willClosed, image, filmId, closeCard, genre, country, year, filmLength, rating } = props;
+    const { year,
+        genre, 
+        image, 
+        nameRu, 
+        nameEn, 
+        filmId, 
+        rating, 
+        country,
+        closeCard, 
+        filmLength, 
+        willClosed } = props;
     
     return (
             !willClosed ? 
@@ -22,8 +32,6 @@ const Card = props => {
     );
 };
 
-export default React.memo(Card);
-
 Card.propTypes = {
     year: PropTypes.string,
     genre: PropTypes.string,
@@ -36,3 +44,5 @@ Card.propTypes = {
     willClosed: PropTypes.bool,
     filmLength: PropTypes.string,
 };
+
+export default React.memo(Card);
